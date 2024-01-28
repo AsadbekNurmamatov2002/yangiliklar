@@ -9,8 +9,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY =os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get('DEBUG', '0').lower() in ['true', 't', '1']
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["*"])
+ALLOWED_HOSTS = ["*"]
+#ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["*"])
 
 SITE_ID=1
 INSTALLED_APPS = [
